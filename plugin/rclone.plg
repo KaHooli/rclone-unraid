@@ -2,9 +2,9 @@
 
 <!DOCTYPE PLUGIN [
 <!ENTITY name				"rclone">
-<!ENTITY author				"kahooli">
-<!ENTITY version			"2022.07.12">
-<!ENTITY bundleversion			"2022.07.12">
+<!ENTITY author				"KaHooli">
+<!ENTITY version			"2022.07.12a">
+<!ENTITY bundleversion			"2022.07.12a">
 <!ENTITY launch				"Settings/rclone">
 <!ENTITY pluginURL			"https://raw.githubusercontent.com/KaHooli/rclone-unraid/master/plugin/rclone.plg">
 <!ENTITY bundleURL			"https://raw.githubusercontent.com/KaHooli/rclone-unraid/master/archive/rclone-&bundleversion;-x86_64-1.txz">
@@ -15,6 +15,10 @@
 
 <CHANGES>
 ##&name;
+
+###2022.07.12a
+- Restored original options
+- Added separate option to use backlevel RClone version 1.58.1
 
 ###2022.07.12
 - Changed to only use RClone version 1.58.1
@@ -146,6 +150,9 @@ Install script.
 <FILE Run="/bin/bash" Method="install">
 <INLINE>
 if [ -f /boot/config/plugins/rclone/install/beta ]; then
+  rcloneurl="https://beta.rclone.org/rclone-beta-latest-linux-amd64.zip"
+  versionurl="https://beta.rclone.org/version.txt"
+elseif [ -f /boot/config/plugins/rclone/install/1581 ]; then
   rcloneurl="https://downloads.rclone.org/v1.58.1/rclone-v1.58.1-linux-amd64.zip"
   versionurl="https://downloads.rclone.org/v1.58.1/version.txt"
 else
