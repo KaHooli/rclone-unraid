@@ -41,11 +41,11 @@ $currentversion = $output[0];
 <?
 if (file_exists("/boot/config/plugins/rclone/install/beta") == true) {
   $branch = "2";
-} elseif (strpos($currentversion, 'beta') !== false) {
+} elseif (strpos($currentversion, 'beta') == true) {
   $branch = "2";
 } elseif (file_exists("/boot/config/plugins/rclone/install/1581") == true) {
   $branch = "3";
-} elseif (strpos($currentversion, '1581') !== false) {
+} elseif (strpos($currentversion, '1581') == true) {
   $branch = "3";
 } else {
   $branch = "1";
