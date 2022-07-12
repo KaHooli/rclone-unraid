@@ -8,7 +8,7 @@
 <!ENTITY launch				"Settings/rclone">
 <!ENTITY pluginURL			"https://raw.githubusercontent.com/KaHooli/rclone-unraid/master/plugin/rclone.plg">
 <!ENTITY bundleURL			"https://raw.githubusercontent.com/KaHooli/rclone-unraid/master/archive/rclone-&bundleversion;-x86_64-1.txz">
-<!ENTITY md5bundle			"e0bf7caa90d9eec0ba30beaf403a5854">
+<!ENTITY md5bundle			"074ff38c549673884ce5a7e2c91e0dcc">
 ]>
 
 <PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;">
