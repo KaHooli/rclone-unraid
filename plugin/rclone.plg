@@ -6,8 +6,8 @@
 <!ENTITY version			"2022.07.12a">
 <!ENTITY bundleversion			"2022.07.12a">
 <!ENTITY launch				"Settings/rclone">
-<!ENTITY pluginURL			"https://raw.githubusercontent.com/KaHooli/rclone-unraid/master/plugin/rclone.plg">
-<!ENTITY bundleURL			"https://raw.githubusercontent.com/KaHooli/rclone-unraid/master/archive/rclone-&bundleversion;-x86_64-1.txz">
+<!ENTITY pluginURL			"https://raw.githubusercontent.com/kahooli/rclone-unraid/master/plugin/rclone.plg">
+<!ENTITY bundleURL			"https://raw.githubusercontent.com/kahooli/rclone-unraid/master/archive/rclone-&bundleversion;-x86_64-1.txz">
 <!ENTITY md5bundle			"68c673887be68ab6649e45a79ecdf97e">
 ]>
 
