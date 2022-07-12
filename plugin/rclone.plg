@@ -2,7 +2,7 @@
 
 <!DOCTYPE PLUGIN [
 <!ENTITY name				"rclone">
-<!ENTITY author				"KaHooli">
+<!ENTITY author				"kahooli">
 <!ENTITY version			"2022.07.12a">
 <!ENTITY bundleversion			"2022.07.12a">
 <!ENTITY launch				"Settings/rclone">
@@ -18,10 +18,10 @@
 
 ###2022.07.12a
 - Restored original options
-- Added separate option to use backlevel RClone version 1.58.1
+- Added separate option to use backlevel RClone version v1.58.1
 
 ###2022.07.12
-- Changed to only use RClone version 1.58.1
+- Changed to only use RClone version v1.58.1
 
 ###2022.01.20
 - Fix ping to rclone download server
@@ -152,7 +152,12 @@ Install script.
 if [ -f /boot/config/plugins/rclone/install/beta ]; then
   rcloneurl="https://beta.rclone.org/rclone-beta-latest-linux-amd64.zip"
   versionurl="https://beta.rclone.org/version.txt"
-elseif [ -f /boot/config/plugins/rclone/install/1581 ]; then
+else
+  rcloneurl="https://downloads.rclone.org/rclone-current-linux-amd64.zip"
+  versionurl="https://downloads.rclone.org/version.txt"
+fi;
+
+if [ -f /boot/config/plugins/rclone/install/1581 ]; then
   rcloneurl="https://downloads.rclone.org/v1.58.1/rclone-v1.58.1-linux-amd64.zip"
   versionurl="https://downloads.rclone.org/v1.58.1/version.txt"
 else
