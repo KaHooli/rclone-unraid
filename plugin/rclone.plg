@@ -3,8 +3,8 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name				"rclone">
 <!ENTITY author				"kahooli">
-<!ENTITY version			"2022.07.12a">
-<!ENTITY bundleversion			"2022.07.12a">
+<!ENTITY version			"2022.07.12b">
+<!ENTITY bundleversion			"2022.07.12b">
 <!ENTITY launch				"Settings/rclone">
 <!ENTITY pluginURL			"https://raw.githubusercontent.com/kahooli/rclone-unraid/master/plugin/rclone.plg">
 <!ENTITY bundleURL			"https://raw.githubusercontent.com/kahooli/rclone-unraid/master/archive/rclone-&bundleversion;-x86_64-1.txz">
@@ -16,7 +16,7 @@
 <CHANGES>
 ##&name;
 
-###2022.07.12a
+###2022.07.12b
 - Restored original options
 - Added separate option to use backlevel RClone version v1.58.1
 
