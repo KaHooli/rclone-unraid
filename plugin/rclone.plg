@@ -152,9 +152,6 @@ Install script.
 if [ -f /boot/config/plugins/rclone/install/beta ]; then
   rcloneurl="https://beta.rclone.org/rclone-beta-latest-linux-amd64.zip"
   versionurl="https://beta.rclone.org/version.txt"
-else
-  rcloneurl="https://downloads.rclone.org/rclone-current-linux-amd64.zip"
-  versionurl="https://downloads.rclone.org/version.txt"
 fi;
 
 if [ -f /boot/config/plugins/rclone/install/1581 ]; then
